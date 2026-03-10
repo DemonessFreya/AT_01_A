@@ -18,7 +18,7 @@
     <ClCompile Include="array_print.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="n.cpp">
+    <ClCompile Include="fizz_buzz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
