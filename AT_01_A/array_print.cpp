@@ -3,6 +3,7 @@
 // part (1)
 
 //int printArray(int arr[], int size) {
+//	// iterate through array and print its elements
 //	std::cout << "Array elements: ";
 //	for (int i = 0; i < size; ++i) {
 //		std::cout << arr[i] << " ";

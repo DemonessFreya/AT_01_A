@@ -6,7 +6,7 @@ int minElement();
 int main() {
 	assert(minElement() == 2, "Minimum element is 2");
 
-	std::cout << minElement() << std::endl;
+	std::cout << minElement() << std::endl; // print the min number for given array
 
 	return 0;
 }
@@ -16,6 +16,7 @@ int minElement() {
 
 	int min = arr[0];
 
+	// iterate through each element in the array and decide whether previous value is smaller than current
 	for (auto i : arr ) {
 		if (i < min) {
 			min = i;
