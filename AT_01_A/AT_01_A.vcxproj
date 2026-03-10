@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="array_print.cpp" />
     <ClCompile Include="fizz_buzz.cpp" />
+    <ClCompile Include="minimum_element.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
