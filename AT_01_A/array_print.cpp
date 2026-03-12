@@ -1,7 +1,7 @@
-#include <iostream>
-
-// part (1)
-
+//#include <iostream>
+//
+//// part (1)
+//
 //int printArray(int arr[], int size) {
 //	// iterate through array and print its elements
 //	std::cout << "Array elements: ";

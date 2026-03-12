@@ -127,6 +127,7 @@
     <ClCompile Include="fizz_buzz.cpp" />
     <ClCompile Include="minimum_element.cpp" />
     <ClCompile Include="statistics.cpp" />
+    <ClCompile Include="switch.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
