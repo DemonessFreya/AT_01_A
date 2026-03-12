@@ -1,24 +1,45 @@
 #include <iostream>
+#include <cassert>
 
-enum PotionType { HEALTH, SPEED, STRENGTH, MAGIC };
+enum PotionType { HEALTH, SPEED, STRENGTH, MAGIC }; // potions
 
 struct Player {
+	// player stats
 	int health = 30;
 	int speed = 10;
 	int strength = 15;
 	int magic = 30;
 };
 
-void applyPotion(enum potionType, Player player);
+void applyPotion(PotionType potionType, Player& player);
 
 int main() {
+	// initialises player objects for logic tests
+	Player healthPlayer;
+	Player speedPlayer;
+	Player strengthPlayer;
+	Player magicPlayer;
 
+	// apply potions to test objects and execute assertions that will check if the logic is correct
+	applyPotion(HEALTH, healthPlayer);
+	assert(healthPlayer.health == 100 && healthPlayer.speed == 10 && healthPlayer.strength == 15 && healthPlayer.magic == 30);
+
+	applyPotion(SPEED, speedPlayer);
+	assert(speedPlayer.health == 20 && speedPlayer.speed == 50 && speedPlayer.strength == 5 && speedPlayer.magic == 10);
+
+	applyPotion(STRENGTH, strengthPlayer);
+	assert(strengthPlayer.health == 60 && strengthPlayer.speed == 25 && strengthPlayer.strength == 200 && strengthPlayer.magic == 30);
+
+	applyPotion(MAGIC, magicPlayer);
+	assert(magicPlayer.health == 30 && magicPlayer.speed == 10 && magicPlayer.strength == 10 && magicPlayer.magic == 100);
 
 	return 0;
 }
 
-void applyPotion(enum potionType, Player player) {
-	switch (HEALTH)
+void applyPotion(PotionType potionType, Player& player) {
+	// pass player object by reference to access its key-values
+	// function checks which potion type is being used and applies its stat changes to the player
+	switch (potionType)
 	{
 		case HEALTH:
 			player.health = 100;
