@@ -6,6 +6,7 @@
 //int main() {
 //	std::cout << hitAcc(20, 30) << std::endl;
 //
+//	// assertions
 //	assert(hitAcc(70, 50) <= 100); // check that arguments don't return a percentage greater than 100
 //
 //	assert(hitAcc(3, 4) == 75);
@@ -37,7 +38,7 @@
 //
 //	float accuracy = 0.0f;
 //
-//	accuracy = (static_cast<float>(numHits) / static_cast<float>(numShots)) * 100.0f; // cast integers to floats so they will not lose data during / operation
+//	accuracy = (static_cast<float>(numHits) / static_cast<float>(numShots)) * 100.0f; // cast integers to floats so they will not lose data during division
 //
-//	return static_cast<int>(accuracy); // return accuracy cast to integer which implicitly rounds the previous float
+//	return static_cast<int>(accuracy); // return accuracy variable cast to an integer which will implicitly round the float (i.e. 1.2 = 1)
 //}

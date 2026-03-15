@@ -5,7 +5,7 @@
 //// part (2)
 //
 //// 1.
-//void fizzBuzz(int input);
+//void fizzBuzz(int input); // forward declaration of fizzBuzz
 //
 //// 2.
 //bool assertFizzBuzz(int input);
