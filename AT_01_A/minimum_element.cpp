@@ -14,7 +14,7 @@
 //int minElement() {
 //	int arr[] = { 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
 //
-//	int min = arr[0];
+//	int min = arr[0]; // will store the minimum element
 //
 //	// iterate through each element in the array and decide whether previous value is smaller than current
 //	for (auto i : arr ) {
